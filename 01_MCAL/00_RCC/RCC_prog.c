@@ -271,4 +271,18 @@ void MRCC_vOutMCO_1Pre(MCO_1_Pre_t Copy_tPreMco_1 )
 /*====================================================   END_ FUNCTION   ====================================================*/
 
 
-
+void MRCC_vInitSystemCLK_Systick(u8 Copy_u8Dev)
+{
+   /* 1- EN HSI */
+	SET_BIT(MRCC->CR , 0U);
+	/* 2- CLK SYS --> HSI */
+	CLR_BIT(MRCC->CFGR, 0U);
+	CLR_BIT(MRCC->CFGR, 1U);
+	if(Copy_u8Dev == 1)
+	{
+		/* Div (AHB/2) */
+		RCC_CFGR |=(0b1000<<4U);
+		
+	}
+	else{/* - Misra */}
+}
