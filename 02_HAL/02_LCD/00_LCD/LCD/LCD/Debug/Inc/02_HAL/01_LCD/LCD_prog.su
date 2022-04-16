@@ -1,0 +1,7 @@
+LCD_prog.c:24:6:LCD_vidInit	8	static
+LCD_prog.c:45:6:LCD_vidSendCommand	16	static
+LCD_prog.c:66:6:LCD_vidWriteChar	16	static
+LCD_prog.c:86:6:LCD_vidGotoXY	24	static
+LCD_prog.c:107:6:LCD_vidWriteString	24	static
+LCD_prog.c:119:6:LCD_vidWriteCustomChar	24	static
+LCD_prog.c:133:6:LCD_vidWriteInt	48	static

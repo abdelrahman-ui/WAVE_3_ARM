@@ -1,0 +1,10 @@
+GPIO_program.c:19:6:MGPIO_vSetPinMode	8	static
+GPIO_program.c:47:6:MGPIO_vSetOutputType	0	static
+GPIO_program.c:77:6:MGPIO_vSetPinOutSpeed	16	static
+GPIO_program.c:110:6:MGPIO_vSetPullType	16	static
+GPIO_program.c:146:5:MGPIO_u16ReadPortData	0	static
+GPIO_program.c:178:4:MGPIO_u8ReadPinValue	0	static
+GPIO_program.c:208:6:MGPIO_vPortOutput	0	static
+GPIO_program.c:238:6:MGPIO_vPortOutputOneByte	8	static
+GPIO_program.c:266:6:MGPIO_vPinOutput	0	static
+GPIO_program.c:301:6:MGPIO_vPinAltFun	0	static

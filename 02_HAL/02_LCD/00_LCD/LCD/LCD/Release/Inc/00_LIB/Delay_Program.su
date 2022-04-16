@@ -1,0 +1,2 @@
+Delay_Program.c:42:13:Delay_vMsIn16MHz	8	static
+Delay_Program.c:62:13:Delay_vUsIn16MHzint	8	static

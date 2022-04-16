@@ -1,0 +1,2 @@
+RCC_program.c:50:7:MRCC_voidInitSysClock	16	static
+RCC_program.c:290:7:MRCC_voidEnableClock	16	static

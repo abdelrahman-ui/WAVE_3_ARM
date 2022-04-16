@@ -54,7 +54,7 @@
 void MDMA2_vStreamInit(void)
 {
 	/* 1- Before Any Config The Bit Of EN Must = 0 ,It must Be Disable*/
-		if( (DMA_2->StreamID[0].CR) ==1)
+		if( (DMA_2->StreamID[0].CR) ==1U)
 		{
 				/* Disable It*/
 			DMA_2->StreamID[0].CR &=~(1U<<0);
@@ -73,8 +73,8 @@ void MDMA2_vStreamInit(void)
 	(DMA_2->StreamID[0].CR)|=(1U<<16)|(1U<<17U); 
 	/*******************************************************************************/
 	/* 4- Set DIR Mode :{ ( MTM ) ,PTM ,MTP} BIT (6,7) */
-	(DMA_2->StreamID[0].CR)&=~(1U<<6U);
-	(DMA_2->StreamID[0].CR)|=(1U<<7U);
+	(DMA_2->StreamID[0].CR)&=~(1U<<7U);
+	(DMA_2->StreamID[0].CR)|=(1U<<6U);
 	/*******************************************************************************/
 	/* 5- Set M & M SIZE BIT(13,14) ,(11,12) :{Byte , HaveWord , (Word)}*/
 			/* 	As Word 32 For Source	*/ 
@@ -92,11 +92,11 @@ void MDMA2_vStreamInit(void)
 	(DMA_2->StreamID[0].FCR)|=(1U<<0U)|(1U<<1U);
 	/*******************************************************************************/
 	/* 8-SRC & DIS Increament For Both */
-	(DMA_2->StreamID[0].CR)&=~(1U<<9U);
-	(DMA_2->StreamID[0].CR)&=~(1U<<10U);
+	(DMA_2->StreamID[0].CR)|=(1U<<9U);
+	(DMA_2->StreamID[0].CR)|=(1U<<10U);
 	/*******************************************************************************/
 	/* 9- EN Interrput Of (Transfer Complete) or(   ,  ,  , )  */
-	(DMA_2->StreamID[0].CR)&=~(1U<<4U);
+	(DMA_2->StreamID[0].CR)|=(1U<<4U);
 	/*******************************************************************************/
 					/**************************************/
 					

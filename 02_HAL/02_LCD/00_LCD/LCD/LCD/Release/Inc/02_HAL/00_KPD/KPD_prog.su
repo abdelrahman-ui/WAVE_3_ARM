@@ -1,0 +1,2 @@
+KPD_prog.c:28:6:MKPD_vInit	16	static
+KPD_prog.c:52:4:MKPD_u8GetKey	24	static
