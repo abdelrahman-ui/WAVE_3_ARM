@@ -39,22 +39,22 @@
 #define _GPIOH_PORT   		      (5U)            /*!< GPIO (H) PORT  */
 
 /*======== Macros Of Pins ========*/
-#define GPIO_PIN_0                ((u16)0x0001)   /*!< Pin 0 selected    */
-#define GPIO_PIN_1                ((u16)0x0002)   /*!< Pin 1 selected    */
-#define GPIO_PIN_2                ((u16)0x0004)   /*!< Pin 2 selected    */
-#define GPIO_PIN_3                ((u16)0x0008)   /*!< Pin 3 selected    */
-#define GPIO_PIN_4                ((u16)0x0010)   /*!< Pin 4 selected    */
-#define GPIO_PIN_5                ((u16)0x0020)   /*!< Pin 5 selected    */
-#define GPIO_PIN_6                ((u16)0x0040)   /*!< Pin 6 selected    */
-#define GPIO_PIN_7                ((u16)0x0080)   /*!< Pin 7 selected    */
-#define GPIO_PIN_8                ((u16)0x0100)   /*!< Pin 8 selected    */
-#define GPIO_PIN_9                ((u16)0x0200)   /*!< Pin 9 selected    */
-#define GPIO_PIN_10               ((u16)0x0400)   /*!< Pin 10 selected   */
-#define GPIO_PIN_11               ((u16)0x0800)   /*!< Pin 11 selected   */
-#define GPIO_PIN_12               ((u16)0x1000)   /*!< Pin 12 selected   */
-#define GPIO_PIN_13               ((u16)0x2000)   /*!< Pin 13 selected   */
-#define GPIO_PIN_14               ((u16)0x4000)   /*!< Pin 14 selected   */
-#define GPIO_PIN_15               ((u16)0x8000)   /*!< Pin 15 selected   */
+#define GPIO_PIN_0            			0U  		   //((u16)0x0001)   /*!< Pin 0 selected    */
+#define GPIO_PIN_1            			1U  		   //((u16)0x0002)   /*!< Pin 1 selected    */
+#define GPIO_PIN_2            			2U  		   //((u16)0x0004)   /*!< Pin 2 selected    */
+#define GPIO_PIN_3            			3U  		   //((u16)0x0008)   /*!< Pin 3 selected    */
+#define GPIO_PIN_4            			4U  		   //((u16)0x0010)   /*!< Pin 4 selected    */
+#define GPIO_PIN_5            			5U  		   //((u16)0x0020)   /*!< Pin 5 selected    */
+#define GPIO_PIN_6            			6U  		   //((u16)0x0040)   /*!< Pin 6 selected    */
+#define GPIO_PIN_7            			7U  		   //((u16)0x0080)   /*!< Pin 7 selected    */
+#define GPIO_PIN_8            			8U  		   //((u16)0x0100)   /*!< Pin 8 selected    */
+#define GPIO_PIN_9            			9U  		   //((u16)0x0200)   /*!< Pin 9 selected    */
+#define GPIO_PIN_10           			10U 		   //((u16)0x0400)   /*!< Pin 10 selected   */
+#define GPIO_PIN_11           			11U 		   //((u16)0x0800)   /*!< Pin 11 selected   */
+#define GPIO_PIN_12           			12U 		   //((u16)0x1000)   /*!< Pin 12 selected   */
+#define GPIO_PIN_13           			13U 		   //((u16)0x2000)   /*!< Pin 13 selected   */
+#define GPIO_PIN_14           			14U 		   //((u16)0x4000)   /*!< Pin 14 selected   */
+#define GPIO_PIN_15           			15U 		   //((u16)0x8000)   /*!< Pin 15 selected   */
 #define GPIO_PIN_All              ((u16)0xFFFF)   /*!< All pins selected */
 
 /*======== Macros Of Mode ========*/
