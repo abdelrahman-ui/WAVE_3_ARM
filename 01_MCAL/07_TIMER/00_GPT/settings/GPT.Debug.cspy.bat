@@ -25,7 +25,7 @@ if not "%~1" == "" goto debugFile
 
 @echo on 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.5\common\bin\cspybat" -f "H:\01_Embedded_Abdelrahman_Magdy\01_ARM\06_Mina\TIVA_C-TM4C123GXL-\01_MCAL\03_Timer\00_GPT\settings\GPT.Debug.general.xcl" --backend -f "H:\01_Embedded_Abdelrahman_Magdy\01_ARM\06_Mina\TIVA_C-TM4C123GXL-\01_MCAL\03_Timer\00_GPT\settings\GPT.Debug.driver.xcl" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.5\common\bin\cspybat" -f "H:\00_NTI\03_WAVE_3\02_DRIVER\WAVE_3_ARM\01_MCAL\07_TIMER\00_GPT\settings\GPT.Debug.general.xcl" --backend -f "H:\00_NTI\03_WAVE_3\02_DRIVER\WAVE_3_ARM\01_MCAL\07_TIMER\00_GPT\settings\GPT.Debug.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.5\common\bin\cspybat" -f "H:\01_Embedded_Abdelrahman_Magdy\01_ARM\06_Mina\TIVA_C-TM4C123GXL-\01_MCAL\03_Timer\00_GPT\settings\GPT.Debug.general.xcl" "--debug_file=%~1" --backend -f "H:\01_Embedded_Abdelrahman_Magdy\01_ARM\06_Mina\TIVA_C-TM4C123GXL-\01_MCAL\03_Timer\00_GPT\settings\GPT.Debug.driver.xcl" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.5\common\bin\cspybat" -f "H:\00_NTI\03_WAVE_3\02_DRIVER\WAVE_3_ARM\01_MCAL\07_TIMER\00_GPT\settings\GPT.Debug.general.xcl" "--debug_file=%~1" --backend -f "H:\00_NTI\03_WAVE_3\02_DRIVER\WAVE_3_ARM\01_MCAL\07_TIMER\00_GPT\settings\GPT.Debug.driver.xcl" 
 
 @echo off 
 :end

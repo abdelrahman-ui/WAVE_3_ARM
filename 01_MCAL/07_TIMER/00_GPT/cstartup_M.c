@@ -57,7 +57,7 @@ const intvec_elem __vector_table[] =
   0,
   PendSV_Handler,
   SysTick_Handler,
-  0,
+  GPIO_IRQHandler,
   0,
   0,
   0,

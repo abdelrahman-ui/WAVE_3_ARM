@@ -1,27 +1,38 @@
+/****************************************************************
+ ************  -STK_private.h                  ******************
+ ***********					   		       ******************
+ ***********   -Created: 3/17/2021			   ******************
+ ***********   -Author: Abdelrahman_Magdy      ******************
+ ***********   -Version : _1_				   ******************
+ ***********								   ******************
+ ****************************************************************/
 
+/****************************************************************
+***********  guard of file will call on time in .c  *************
+******************************************************************/
 
+#ifndef STK_PRIVATE_H
+#define STK_PRIVATE_H
 
+/**** Include  ***/
+#include "STD_TYPES.h"
 
-
-
-
-#ifndef _STK_PRIVATE_H
-#define _STK_PRIVATE_H
-
-
-typedef struct 
+typedef struct
 {
-	volatile u32 CTRL  ;
-	volatile u32 LOAD  ;
-	volatile u32 VAL   ;
-	volatile u32 CALIB ;
-	
+volatile u32 CTRL ;
+volatile u32 LOAD ;
+volatile u32 VAL ;	
+volatile u32 CALIB ;	
 }MSTK_t;
-
 /**/
-#define SYSTICK_BASS_ADDRESS  0xE000E010
+#define SYSTICK_BASE_ADDRESS       0xE000E010
 /**/
-#define MSTK               ((MSTK_t *)(SYSTICK_BASS_ADDRESS ))
+#define MSTK  ((MSTK_t *) SYSTICK_BASE_ADDRESS )
+/**/
 
 
-#endif
+#endif //STK_PRIVATE.H
+
+/****************************************************************
+***********              End of guard               *************
+******************************************************************/

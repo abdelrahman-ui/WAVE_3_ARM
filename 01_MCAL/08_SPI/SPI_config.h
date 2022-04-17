@@ -1,0 +1,20 @@
+
+
+
+
+
+
+
+/*
+MSPI1_ENABLE 
+MSPI1_DISABLE
+*/
+
+#define MSPI_1_STATUS    MSPI1_ENABLE
+
+
+
+
+#define MSPI1_CLK_PHA  
+
+
