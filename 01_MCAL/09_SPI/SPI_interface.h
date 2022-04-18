@@ -33,6 +33,15 @@
 #define SPI_INTERFACE_H
 
 
+ #define _SPI_1_      1U
+ #define _SPI_2_      2U
+ #define _SPI_3_      3U
+ #define _SPI_4_      4U
+
+
+
+
+void MSPI_vInit(u8 Copy_u8Index);
 
 
 

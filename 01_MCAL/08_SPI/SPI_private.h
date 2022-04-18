@@ -118,7 +118,7 @@ typedef struct {
 
 ************************************************************************************/
 #define SPI3_CR1           (*((volatile)  u32*)(_SPI_3_BASE_ADDRESS+0x00))/*!< SPI control register 1 (not used in I2S mode),      Address offset: 0x00 */
-#define SPI1_CR3           (*((volatile)  u32*)(_SPI_3_BASE_ADDRESS+0x04))/*!< SPI control register 2,                             Address offset: 0x04 */
+#define SPI1_CR2           (*((volatile)  u32*)(_SPI_3_BASE_ADDRESS+0x04))/*!< SPI control register 2,                             Address offset: 0x04 */
 #define SPI3_SR            (*((volatile)  u32*)(_SPI_3_BASE_ADDRESS+0x08))/*!< SPI status register,                                Address offset: 0x08 */
 #define SPI3_DR            (*((volatile)  u32*)(_SPI_3_BASE_ADDRESS+0x0C))/*!< SPI data register,                                  Address offset: 0x0C */
 #define SPI3_CRCPR         (*((volatile)  u32*)(_SPI_3_BASE_ADDRESS+0x10))/*!< SPI CRC polynomial register (not used in I2S mode), Address offset: 0x10 */

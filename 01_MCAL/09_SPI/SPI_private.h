@@ -51,9 +51,9 @@ typedef struct{
     u32 CRCEN       : 1;
     u32 BIDIOE      : 1;
     u32 BIDIMODE    : 1;
-    u32 RESERVED    : 16;
+    //u32 RESERVED    : 16;
 
-}SPI_CFG;
+}CR1_REG;
 
 /***********************************************************************************
 ----->	Struct
@@ -61,7 +61,7 @@ typedef struct{
 ************************************************************************************/
 
 typedef struct{
-  volatile  SPI_CFG CR1  ;		/*!< SPI control register 1 (not used in I2S mode),      Address offset: 0x00 */ 
+  volatile  CR1_REG CR1  ;		/*!< SPI control register 1 (not used in I2S mode),      Address offset: 0x00 */ 
   volatile  u32 CR2      ;		/*!< SPI control register 2,                             Address offset: 0x04 */
   volatile  u32 SR       ;		/*!< SPI status register,                                Address offset: 0x08 */
   volatile  u32 DR       ;		/*!< SPI data register,                                  Address offset: 0x0C */
@@ -75,10 +75,10 @@ typedef struct{
 /***********************************************************************************
 *     --> Pointer To STRUCT From SPI_t
 ************************************************************************************/
-#define     SPI1_REG    (( SPI_t  *)(SPI1_BASE_ADDRESS))
-#define     SPI2_REG    (( SPI_t  *)(SPI2_BASE_ADDRESS))
-#define     SPI3_REG    (( SPI_t  *)(SPI3_BASE_ADDRESS))
-#define     SPI4_REG    (( SPI_t  *)(SPI4_BASE_ADDRESS))
+#define     SPI1    (( SPI_t  *)(SPI1_BASE_ADDRESS))
+#define     SPI2    (( SPI_t  *)(SPI2_BASE_ADDRESS))
+#define     SPI3    (( SPI_t  *)(SPI3_BASE_ADDRESS))
+#define     SPI4    (( SPI_t  *)(SPI4_BASE_ADDRESS))
 
 
 #endif //SPI_PRIVATE_H
